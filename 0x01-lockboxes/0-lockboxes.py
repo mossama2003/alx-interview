@@ -8,10 +8,10 @@ def canUnlockAll(boxes):
     unlocked_boxes = [0]  # Box 0 is already unlocked
     keys = list(boxes[0])  # Start with keys from Box 0  like [1, 2, 4]
 
-    while keys:
-        key = keys.pop() # pop a key and try it
-        if key < len(boxes) and key not in unlocked_boxes:
-            unlocked_boxes.append(key)
-            keys.extend(boxes[key])  #newly opened box keys
+while keys:
+    key = keys.pop() # pop a key and try it
+    if key < len(boxes) and key not in unlocked_boxes:
+        unlocked_boxes.append(key)
+         keys.extend(boxes[key])  #newly opened box keys
 
     return len(unlocked_boxes) == len(boxes)

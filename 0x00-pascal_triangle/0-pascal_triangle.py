@@ -19,3 +19,4 @@ def pascal_triangle(n):
             row[i] = triangle[row_num - 1][i - 1] + triangle[row_num - 1][i]
 
     return triangle
+    

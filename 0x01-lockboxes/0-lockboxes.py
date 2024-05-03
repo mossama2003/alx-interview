@@ -15,4 +15,3 @@ def canUnlockAll(boxes):
             keys.extend(boxes[key])  #newly opened box keys
 
     return len(unlocked_boxes) == len(boxes)
-
